@@ -1,9 +1,9 @@
 node{
   stage ('Build') {
-     git url: 'https://github.com/krishc17/maven-samples.git'
+     git url: 'https://github.com/krishc17/School-Registration.git'
      withMaven(
-        maven: 'maven_1',
-        mavenSettingsConfig: 'c4128ab8-6b67-435e-b536-b4ed8e8fb5fb') {
+        maven: 'Maven1',
+        mavenSettingsConfig: '2cad0513-a7a5-45c2-9988-d9c1ee3fb0e9') {
         sh "mvn clean package"
  
     } 
